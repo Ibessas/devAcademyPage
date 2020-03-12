@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="menu">
-      <div class="nav">
+      <div class="nav" v-bind:style="navBackground">
         <ul>
           <li><a href="#capa"> <span class="dev">dev.</span>academy</a></li>
           <li><a href="#">Quem somos</a></li>
@@ -16,6 +16,27 @@
 <script>
 export default {
   name: 'Menu',
+  data() {
+    return {
+      navBackground: {
+        backgroundColor: 'rgba(255, 0, 0, 0)'
+      }
+    };
+  },
+  created() {
+    const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    console.log(`${vw  } ${  vh}` )
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      this.navBackground.backgroundColor = `rgba(0, 0, 0,${window.scrollY / 1000})`;
+    }
+  }
 };
 </script>
 
@@ -23,8 +44,10 @@ export default {
 
 .nav
     width 100% 
-    top 10px
+    top 0px
+    padding 10px 0px
     position fixed
+    z-index 2
 
 ul
   list-style-type none

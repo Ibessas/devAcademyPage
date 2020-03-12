@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Capa />
+    <Team/>
     <Animation />
+
 
   </div>
 </template>
@@ -9,13 +11,15 @@
 <script>
 import Capa from './components/Capa.vue';
 import Animation from './components/Animation.vue';
+import Team from './components/team/Team.vue'
 
 
 export default {
   name: 'App',
   components: {
     Capa,
-    Animation
+    Animation,
+    Team
 
   }
 };

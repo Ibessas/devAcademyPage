@@ -113,15 +113,16 @@ export default {
 
 <style lang="stylus">
 .team {
-  background-color: #ffffff;
+  background-color: rgb(20,20,20);
   float: left;
   padding: 0 5% 64px 5%;
+  z-index 0
 
   .team-content {
     padding-left: 32px;
 
     .title {
-      color: #303030;
+      color: #ffffff;
       font-size: 32px;
       font-weight: bold;
       letter-spacing: 2px;
@@ -129,6 +130,7 @@ export default {
     }
 
     .team-member {
+      z-index 1
       float: left;
       margin-right: 32px;
       margin-top: 32px;
@@ -141,6 +143,7 @@ export default {
   width: calc(60% - 32px);
 
   .team-member {
+    z-index 1
     width: calc(33.3% - 32px);
   }
 }

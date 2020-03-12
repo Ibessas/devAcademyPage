@@ -52,7 +52,7 @@ export default {
     margin-top: 24px;
     transform: translateX(-50%);
     width: 60%;
-    z-index: 0;
+    z-index: 1;
   }
 
   .name {

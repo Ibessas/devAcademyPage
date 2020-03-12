@@ -32,6 +32,7 @@ export default {
   methods: {
     handleScroll() {
       const valor = Math.abs((window.scrollY - 1000))/1000;
+      console.log(valor)
       this.imgBackground.opacity = valor
     }
   }
