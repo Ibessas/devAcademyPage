@@ -1,28 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Capa />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Capa from './components/Capa.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-  },
+    Capa
+  }
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="stylus">
+body
+  margin: 0
+  font-family dekar-regular
+  height 5000px
+
+@font-face
+  font-family: dekar-regular;
+  src: url('./assets/Dekar/Dekar-Regular.otf');
 </style>
