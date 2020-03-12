@@ -20,6 +20,7 @@ body
   margin: 0
   font-family dekar-regular
   height 5000px
+  background-color black
 
 @font-face
   font-family: dekar-regular;

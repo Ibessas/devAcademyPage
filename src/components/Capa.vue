@@ -1,7 +1,8 @@
 <template>
   <div>
-    <div class="capa">
+    <div class="capa" id="capa">
       <Menu />
+      <img v-bind:style='imgBackground' src='../assets/background1.png' alt="" srcset="">
     </div>
   </div>
 </template>
@@ -13,6 +14,25 @@ export default {
   name: 'Capa',
   components: {
     Menu
+  },
+  data() {
+    return {
+      imgBackground: {
+        opacity: '1'
+      }
+    };
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      const valor = Math.abs((window.scrollY - 1000))/1000;
+      this.imgBackground.opacity = valor
+    }
   }
 };
 </script>
@@ -20,9 +40,14 @@ export default {
 <style lang="stylus">
 .capa
   width 100%
-  height 100vw
+  height auto
   position relative
   overflow hidden
-  background-image url('../assets/background.png')
   background-repeat no-repeat
+img 
+  width 100vw
+  z-index -1
+  position relative
+Menu
+  z-index 0
 </style>
