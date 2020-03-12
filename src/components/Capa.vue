@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="capa" id="capa">
-      <img v-bind:style='imgBackground' src='../assets/background1.png' alt="" srcset="">
       <Menu />
+      <img v-bind:style='imgBackground' src='../assets/background1.png' alt="" srcset="">
     </div>
   </div>
 </template>
@@ -46,4 +46,8 @@ export default {
   background-repeat no-repeat
 img 
   width 100vw
+  z-index -1
+  position relative
+Menu
+  z-index 0
 </style>
