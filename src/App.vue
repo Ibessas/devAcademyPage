@@ -1,16 +1,22 @@
 <template>
   <div id="app">
     <Capa />
+    <Animation />
+
   </div>
 </template>
 
 <script>
 import Capa from './components/Capa.vue';
+import Animation from './components/Animation.vue';
+
 
 export default {
   name: 'App',
   components: {
-    Capa
+    Capa,
+    Animation
+
   }
 };
 </script>
