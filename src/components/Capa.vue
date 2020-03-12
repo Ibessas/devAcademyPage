@@ -10,6 +10,7 @@
 <script>
 import Menu from './Menu.vue';
 
+
 export default {
   name: 'Capa',
   components: {
