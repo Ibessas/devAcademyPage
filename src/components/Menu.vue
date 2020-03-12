@@ -22,6 +22,9 @@ export default {
     };
   },
   created() {
+    const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    console.log(`${vw  } ${  vh}` )
     window.addEventListener('scroll', this.handleScroll);
   },
   destroyed() {
@@ -47,15 +50,14 @@ export default {
     overflow auto
 
 .nav a  
-    width 25vw
+    width 25%
     float left
-    font-size 17px
+    font-size 25px
     color white
-    padding 12px
+    padding 15px 0px
     text-align center 
     text-decoration none
 
 .nav a:hover
-    background-color white
-    color black
+    background-color rgba(255, 255, 255, 0.5 )
 </style>

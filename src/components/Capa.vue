@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="capa">
+      <img src='../assets/background1.png' alt="" srcset="">
       <Menu />
     </div>
   </div>
@@ -20,9 +21,10 @@ export default {
 <style lang="stylus">
 .capa
   width 100%
-  height 100vw
+  height auto
   position relative
   overflow hidden
-  background-image url('../assets/background.png')
   background-repeat no-repeat
+img 
+  width 100vw
 </style>
