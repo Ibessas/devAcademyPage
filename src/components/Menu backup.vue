@@ -2,7 +2,7 @@
   <div>
     <div class="menu">
       <div class="nav" v-bind:style="navBackground">
-              <a href="#capa"> <span class="dev">dev.</span>academy</a>
+              <a href="#">DevAcademy</a>
               <a href="#">Quem somos</a>
               <a href="#">Time</a>
               <a href="#">Sobre</a>
@@ -36,17 +36,17 @@ export default {
 </script>
 
 <style lang="stylus">
+.menu
+    height 100%
+    width 100%
 
 .nav
-    width 50% 
-    top 0
+    width 100% 
     position fixed
-    left 50%
-    margin-left: -25vw;
-    display block
+    top 0
+    overflow auto
 
 .nav a  
-    font-weight: bold;
     width 25%
     float left
     font-size 30px
@@ -54,9 +54,7 @@ export default {
     padding 15px 0px
     text-align center 
     text-decoration none
-  
-.dev 
-  color rgb(220, 178, 22)
+
 .nav a:hover
     background-color rgba(255, 255, 255, 0.5 )
 </style>
