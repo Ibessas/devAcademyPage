@@ -1,49 +1,49 @@
 <template>
   <div>
     <div class="menu">
-        <div class="nav" v-bind:style="navBackground">
-            <div class="list">
-                <ul>
-                    <li>
-                        <a href="#">Contato</a>
-                    </li>
-                    <li>
-                        <a href="#">Localização</a>
-                    </li>
-                    <li>
-                        <a href="#">Quem somos</a>
-                    </li>
-                    <li>
-                        <a href="#">DevAcademy</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="nav" v-bind:style="navBackground">
+        <div class="list">
+          <ul>
+            <li>
+              <a href="#">Contato</a>
+            </li>
+            <li>
+              <a href="#">Localização</a>
+            </li>
+            <li>
+              <a href="#">Quem somos</a>
+            </li>
+            <li>
+              <a href="#">DevAcademy</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'Menu',
-    data() {
-        return {
-            navBackground:{
-                backgroundColor:'rgba(255, 0, 0, 0)'
-            }
-        };
-    },
-    created () {
-        window.addEventListener('scroll', this.handleScroll);
-    },
-    destroyed () {
-        window.removeEventListener('scroll', this.handleScroll);
-    },
-    methods:{
-        handleScroll () {
-            this.navBackground.backgroundColor=`rgba(0, 0, 0,${window.scrollY/1000})`
-        }
+  name: 'Menu',
+  data() {
+    return {
+      navBackground: {
+        backgroundColor: 'rgba(255, 0, 0, 0)'
+      }
+    };
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      this.navBackground.backgroundColor = `rgba(0, 0, 0,${window.scrollY / 1000})`;
     }
+  }
 };
 </script>
 
@@ -62,7 +62,7 @@ export default {
 ul
     list-style-type none
     margin 0
-    padding 1
+    width 100vw
     overflow hidden
 
 li
@@ -71,7 +71,7 @@ li
 li a
     font-size 1.3vw
     display block
-    color white 
+    color white
     text-align center
     padding 14px 16px
     text-decoration none
@@ -79,5 +79,4 @@ li a
 li a:hover
     background-color white
     color black
-    
 </style>
