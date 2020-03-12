@@ -2,23 +2,11 @@
   <div>
     <div class="menu">
       <div class="nav" v-bind:style="navBackground">
-        <div class="list">
-          <ul>
-            <li>
-              <a href="#">Contato</a>
-            </li>
-            <li>
-              <a href="#">Localização</a>
-            </li>
-            <li>
-              <a href="#">Quem somos</a>
-            </li>
-            <li>
               <a href="#">DevAcademy</a>
-            </li>
-          </ul>
+              <a href="#">Quem somos</a>
+              <a href="#">Time</a>
+              <a href="#">Sobre</a>
         </div>
-      </div>
     </div>
   </div>
 </template>
@@ -53,30 +41,21 @@ export default {
     width 100%
 
 .nav
-    padding 1px 0px
-    margin 0px
+    width 100% 
     position fixed
     top 0
-    right 0
+    overflow auto
 
-ul
-    list-style-type none
-    margin 0
-    width 100vw
-    overflow hidden
-
-li
-    float right
-    margin-right 10px
-li a
-    font-size 1.3vw
-    display block
+.nav a  
+    width 25vw
+    float left
+    font-size 17px
     color white
-    text-align center
-    padding 14px 16px
+    padding 12px
+    text-align center 
     text-decoration none
 
-li a:hover
+.nav a:hover
     background-color white
     color black
 </style>
