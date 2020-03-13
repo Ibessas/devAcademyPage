@@ -1,6 +1,6 @@
 <template>
   <div class="animation">
-    <!-- <h1 class="group0">#</h1>
+    <h1 class="group0">#</h1>
     <h1 class="group1">-</h1>
     <h1 class="group2">{</h1>
     <h1 class="group3">#</h1>
@@ -9,7 +9,7 @@
     <h1 class="group6">//</h1>
     <h1 class="group7">if</h1>
     <h1 class="group8">}</h1>
-    <h1 class="group9">elif</h1> -->
+    <h1 class="group9">elif</h1> 
 
   </div>
 </template>
@@ -20,13 +20,12 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 .animation
   height 100%
   width 100%
   color white
   bottom:15%;
-  position absolute
   top 0
   z-index 0
 

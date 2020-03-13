@@ -1,10 +1,10 @@
 <template>
       <div class="nav" v-bind:style="navBackground" v-bind:class="{'responsive':responsive}">
         <ul>
-          <li><a href="#capa"> <span class="dev">dev.</span>academy</a></li>
-          <li><a href="#">Quem somos</a></li>
-          <li><a href="#time">Time</a></li>
-          <li><a href="#rodape">Contato</a></li>
+          <li><a @click="toggleNav()" href="#capa"> <span class="dev">dev.</span>academy</a></li>
+          <li><a @click="toggleNav()" href="#">Quem somos</a></li>
+          <li><a @click="toggleNav()" href="#time">Time</a></li>
+          <li><a @click="toggleNav()" href="#rodape">Contato</a></li>
           
         </ul>
           <a class="icon" @click="toggleNav">&#9776;</a>
@@ -34,7 +34,6 @@ export default {
         this.navBackground.backgroundColor = `rgba(0, 0, 0,${window.scrollY / 150})`;
       else
         this.navBackground.backgroundColor = `rgba(0, 0, 0,${window.scrollY / 1000})`;
-
     },
     toggleNav(){
       this.responsive = !this.responsive
@@ -47,14 +46,13 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 
 .nav
     width 100% 
     top 0px
     padding 10px 0px
-    position fixed
-    z-index 3
+    z-index 4
 
 ul
   list-style-type none

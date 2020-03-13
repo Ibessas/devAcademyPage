@@ -80,4 +80,11 @@ img
   z-index 2
   height: 70px;
   width: 90px
+
+@media screen and (max-width: 1110px) 
+  .left,.right
+    float none
+  .content
+    width 100%
+    text-align center
 </style>
