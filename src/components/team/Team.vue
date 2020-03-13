@@ -58,7 +58,7 @@ export default {
           image: 'diego-gaspar.jpeg',
           name: 'Diego Gaspar',
           occupation: 'Web Developer',
-          linkedin: '',
+          linkedin: 'https://www.linkedin.com/in/diego-gaspar-259824123/',
           github: 'https://github.com/diegogasparcruz'
         },
         {
