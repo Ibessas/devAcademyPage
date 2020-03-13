@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .animation
   height 100%
   width 100%

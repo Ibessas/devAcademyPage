@@ -39,14 +39,14 @@ export default {
 };
 </script>
 
-<style lang="stylus">
-.team-member {
+<style lang="stylus" scoped>
+.team-member 
   background-color: #ffffff;
   border-radius: 24px;
   box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.02);
   overflow: hidden;
 
-  .image {
+  .image 
     border-radius: 50%;
     margin-left: 50%;
     margin-top: 24px;
@@ -54,26 +54,26 @@ export default {
     width: 60%;
     position relative
     z-index: 4;
-  }
+  
 
-  .name {
+  .name 
     color: #303030;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 2px;
     margin-top: 16px;
     text-align: center;
-  }
+  
 
-  .occupation {
+  .occupation 
     color: #909090;
     font-size: 14px;
     font-weight: bold;
     margin-top: 4px;
     text-align: center;
-  }
+  
 
-  .social {
+  .social 
     background-color: #efefef;
     display: flex;
     justify-content: center;
@@ -82,11 +82,11 @@ export default {
     z-index 3
     position relative
 
-    .mark {
+    .mark 
       margin-left: 8px;
       width: 20px;
       z-index: 0;
-    }
-  }
-}
+    
+  
+
 </style>

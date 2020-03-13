@@ -38,7 +38,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .capa
   width 100%
   height auto

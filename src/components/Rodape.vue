@@ -1,17 +1,19 @@
 <template>
   <div class="footer">
-    <div class="left">
-      <h2 class="title">Dev Academy</h2>
-      <p>
-        Endereço: R. Basílio Emiliano Pinto, 427 - Centro, Quixadá - CE, 63900-211 <br />
-        Telefone: (88) 9999-9999
-      </p>
-    </div>
-    <div class="right">
-      <h2 class="title">Powered by</h2>
-      <a href="https://www.casamagalhaes.com.br/" target="_blank">
-        <img src="../assets/cm-logo.png" />
-      </a>
+    <div class="content">
+      <div class="left">
+        <h2 class="title">Dev Academy</h2>
+        <p>
+          Endereço: R. Basílio Emiliano Pinto, 427 - Centro, Quixadá - CE, 63900-211 <br />
+          Telefone: (88) 9999-9999
+        </p>
+      </div>
+      <div class="right">
+        <h2 class="title">Powered by</h2>
+        <a href="https://www.casamagalhaes.com.br/" target="_blank">
+          <img src="../assets/cm-logo.png" />
+        </a>
+      </div>
     </div>
       <div class="copy">
         <span>
@@ -31,12 +33,11 @@ export default {
 <style lang="stylus" scoped>
 .footer
   position relative
-  display block
   color white
   z-index 2
+  width 60%
   margin-left auto
   margin-right auto
-  width 60%
   
 
 .left
@@ -47,8 +48,16 @@ export default {
 
 .copy
   position relative
-  bottom 0
+  margin-left auto
+  margin-right auto
   z-index 2
+  text-align center
+  margin-bottom 10px
+  margin-top 10px
+
+.content 
+  width 50vw  
+  display inline-block
 
 h2
   font-weight: bold;
