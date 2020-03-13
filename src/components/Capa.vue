@@ -1,14 +1,13 @@
 <template>
-  <div>
     <div class="capa" id="capa">
       <Menu />
       <img v-bind:style='imgBackground' src='../assets/background1.png' alt="" srcset="">
     </div>
-  </div>
 </template>
 
 <script>
 import Menu from './Menu.vue';
+
 
 export default {
   name: 'Capa',
@@ -30,7 +29,9 @@ export default {
   },
   methods: {
     handleScroll() {
-      const valor = Math.abs((window.scrollY - 1000))/1000;
+      let valor = Math.abs((window.scrollY - 1000))/1000;
+      if(valor < 0.4)
+        valor /=2
       this.imgBackground.opacity = valor
     }
   }
