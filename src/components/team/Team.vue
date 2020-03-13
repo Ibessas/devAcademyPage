@@ -114,7 +114,7 @@ export default {
 <style lang="stylus">
 .team {
   background-color: rgba(0,0,0,0);
-  float: left;
+  display inline-block
   padding: 0 5% 64px 5%;
   position relative
   .team-content {
