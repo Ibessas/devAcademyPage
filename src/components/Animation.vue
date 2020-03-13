@@ -22,17 +22,6 @@
       <h1 class="group1">elif</h1>
       <h1 class="group5">-</h1>
       <h1 class="group4">#</h1>
-      
-      <h1 class="group1">-</h1>
-      <h1 class="group2">{</h1>
-      <h1 class="group3">#</h1>
-      <h1 class="group4">\</h1>
-      <h1 class="group5">//</h1>
-      <h1 class="group2">}</h1>
-      <h1 class="group3">if</h1>
-      <h1 class="group1">elif</h1>
-      <h1 class="group5">-</h1>
-      <h1 class="group4">#</h1>
 
     
     </div>

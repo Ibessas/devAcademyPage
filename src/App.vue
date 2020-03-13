@@ -27,6 +27,9 @@ export default {
 </script>
 
 <style lang="stylus">
+html
+  overflow-x hidden
+
 body
   margin: 0
   font-family dekar-regular
