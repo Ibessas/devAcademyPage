@@ -39,6 +39,7 @@ import TeamMember from './TeamMember.vue';
 
 export default {
   name: 'Team',
+
   components: {
     TeamMember
   },

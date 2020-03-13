@@ -23,7 +23,7 @@
       <h1 class="group5">-</h1>
       <h1 class="group4">#</h1>
 
-    
+   
     </div>
 </template>
 
@@ -42,6 +42,7 @@ export default {
   position absolute
   top 0
   z-index 0
+  
 h1
   position relative
   font-size 50px
