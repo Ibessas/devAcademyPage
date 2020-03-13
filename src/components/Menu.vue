@@ -4,7 +4,7 @@
           <li><a href="#capa"> <span class="dev">dev.</span>academy</a></li>
           <li><a href="#">Quem somos</a></li>
           <li><a href="#time">Time</a></li>
-          <li><a href="#">Sobre</a></li>
+          <li><a href="#rodape">Contato</a></li>
           
         </ul>
           <a class="icon" @click="toggleNav">&#9776;</a>
@@ -47,7 +47,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 
 .nav
     width 100% 

@@ -1,57 +1,74 @@
 <template>
-  <!-- Footer -->
-  <mdb-footer id="footer" color="#303030" z-index="2" class="font-small pt-4 mt-4">
-    <mdb-container class="text-left">
-      <mdb-row>
-        <mdb-col sm="6">
-          <h5 class="title">Dev Academy</h5>
-          <p>Endereço: R. Basílio Emiliano Pinto, 427 - Centro, Quixadá - CE, 63900-211 <br> 
-            Telefone: (88) 9999-9999
-          </p>
-        </mdb-col>
-        <mdb-col sm="6">
-          <h5 class="title">Links</h5>
-          <ul>
-            <li  class="list-unstyled">
-                <a  href="https://www.casamagalhaes.com.br/">
-                    <img id="imagem" src="../assets/cm-logo.png">
-                </a>
-                </li>
-          </ul>
-        </mdb-col>
-      </mdb-row>
-    </mdb-container>
-    <div class="footer-copyright text-center py-3">
-      <mdb-container fluid>
-        &copy; 2020 Copyright: <a href="http://devacademy.netlify.com/"> devacademy.com.br </a>
-      </mdb-container>
+  <div class="footer">
+    <div class="left">
+      <h2 class="title">Dev Academy</h2>
+      <p>
+        Endereço: R. Basílio Emiliano Pinto, 427 - Centro, Quixadá - CE, 63900-211 <br />
+        Telefone: (88) 9999-9999
+      </p>
     </div>
-  </mdb-footer>
-  <!-- Footer -->
+    <div class="right">
+      <h2 class="title">Powered by</h2>
+      <a href="https://www.casamagalhaes.com.br/" target="_blank">
+        <img src="../assets/cm-logo.png" />
+      </a>
+    </div>
+      <div class="copy">
+        <span>
+          &copy; 2020 Copyright:
+        </span>
+        <a href="http://devacademy.netlify.com/" target="_blank"> devacademy.com.br </a>
+      </div>
+  </div>
 </template>
 
 <script>
-  import { mdbFooter, mdbContainer, mdbRow, mdbCol } from 'mdbvue';
-
-  export default {
-    name: 'FooterPage',
-    components: {
-      mdbFooter,
-      mdbContainer,
-      mdbRow,
-      mdbCol
-    }
-  }
+export default {
+  name: 'Footer'
+};
 </script>
 
 <style lang="stylus" scoped>
-    #imagem {
-        height: 70px;
-        width: 90px
-    }
+.footer
+  position relative
+  display block
+  color white
+  z-index 2
+  margin-left auto
+  margin-right auto
+  width 60%
+  
 
-    #footer {
-        margin-top: 200px;
-    }
+.left
+  float left
+
+.right
+  float right
+
+.copy
+  position relative
+  bottom 0
+  z-index 2
+
+h2
+  font-weight: bold;
+
+a
+  color white
+  text-decoration none;
+
+
+a:visited
+  color white
+  text-decoration none;
+
+
+a:hover
+  color white
+  text-decoration: underline;
+
+img
+  z-index 2
+  height: 70px;
+  width: 90px
 </style>
-
