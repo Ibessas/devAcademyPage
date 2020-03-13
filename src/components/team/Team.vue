@@ -140,22 +140,24 @@ export default {
 
 .web-team 
   float: left;
-  width: calc(60% - 32px);
+  width: calc(100% - 32px);
   z-index 2
 
   .team-member 
-    width: calc(33.3% - 32px);
+    width: calc(100% - 32px);
+
   
 
 
 .data-science-team 
   float: left;
-  width: calc(40% - 32px);
+  width: calc(100% - 32px);
   z-index 2
 
 
   .team-member 
-    width: calc(50% - 32px);
+    width: calc(100% - 32px);
+
   
 
 
@@ -164,7 +166,8 @@ export default {
     width: calc(100% - 32px);
 
     .team-member 
-      width: calc(100% - 32px);
+      width: calc(50% - 32px);
+
     
   
 
@@ -172,7 +175,8 @@ export default {
     width: calc(100% - 32px);
 
     .team-member 
-      width: calc(100% - 32px);
+      width: calc(50% - 32px);
+
     
   
 
@@ -191,6 +195,24 @@ export default {
 
     .team-member 
       width: calc(33.3% - 32px);
+    
+  
+
+
+@media screen and (min-width: 1200px) 
+  .web-team 
+    width: calc(60% - 32px);
+
+    .team-member 
+      width: calc(33.3% - 32px);
+    
+  
+
+  .data-science-team 
+    width: calc(40% - 32px);
+
+    .team-member 
+      width: calc(50% - 32px);
     
   
 
