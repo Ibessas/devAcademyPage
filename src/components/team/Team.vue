@@ -111,109 +111,85 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
-.team 
+<style lang="stylus">
+.team {
   background-color: rgba(0,0,0,0);
+  float: left;
   padding: 0 5% 64px 5%;
   position relative
-  display inline-block
-
-  .team-content 
+  .team-content {
     padding-left: 32px;
     position relative
-
-    .title 
+    .title {
       color: #ffffff;
       font-size: 32px;
       font-weight: bold;
       letter-spacing: 2px;
       margin-top: 64px;
-    
-
-    .team-member 
+    }
+    .team-member {
       float: left;
       margin-right: 32px;
       margin-top: 32px;
-    
-  
-
-
-.web-team 
+    }
+  }
+}
+.web-team {
   float: left;
   width: calc(100% - 32px);
   z-index 2
-
-  .team-member 
+  .team-member {
     width: calc(100% - 32px);
-
-  
-
-
-.data-science-team 
+  }
+}
+.data-science-team {
   float: left;
   width: calc(100% - 32px);
   z-index 2
-
-
-  .team-member 
+  .team-member {
     width: calc(100% - 32px);
-
-  
-
-
-@media screen and (max-width: 600px) 
-  .web-team 
+  }
+}
+@media screen and (min-width: 600px) {
+  .web-team {
     width: calc(100% - 32px);
-
-    .team-member 
+    .team-member {
       width: calc(50% - 32px);
-
-    
-  
-
-  .data-science-team 
+    }
+  }
+  .data-science-team {
     width: calc(100% - 32px);
-
-    .team-member 
+    .team-member {
       width: calc(50% - 32px);
-
-    
-  
-
-
-@media screen and (max-width: 992px) 
-  .web-team 
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .web-team {
     width: calc(100% - 32px);
-
-    .team-member 
+    .team-member {
       width: calc(33.3% - 32px);
-    
-  
-
-  .data-science-team 
+    }
+  }
+  .data-science-team {
     width: calc(100% - 32px);
-
-    .team-member 
+    .team-member {
       width: calc(33.3% - 32px);
-    
-  
-
-
-@media screen and (min-width: 1200px) 
-  .web-team 
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .web-team {
     width: calc(60% - 32px);
-
-    .team-member 
+    .team-member {
       width: calc(33.3% - 32px);
-    
-  
-
-  .data-science-team 
+    }
+  }
+  .data-science-team {
     width: calc(40% - 32px);
-
-    .team-member 
+    .team-member {
       width: calc(50% - 32px);
-    
-  
-
+    }
+  }
+}
 </style>
