@@ -39,7 +39,6 @@ import TeamMember from './TeamMember.vue';
 
 export default {
   name: 'Team',
-
   components: {
     TeamMember
   },
@@ -113,15 +112,17 @@ export default {
 
 <style lang="stylus">
 .team {
-  background-color: #ffffff;
+  background-color: rgba(0,0,0,0);
   float: left;
   padding: 0 5% 64px 5%;
+  position relative
 
   .team-content {
     padding-left: 32px;
+    position relative
 
     .title {
-      color: #303030;
+      color: #ffffff;
       font-size: 32px;
       font-weight: bold;
       letter-spacing: 2px;
@@ -139,6 +140,7 @@ export default {
 .web-team {
   float: left;
   width: calc(100% - 32px);
+  z-index 2
 
   .team-member {
     width: calc(100% - 32px);
@@ -148,6 +150,8 @@ export default {
 .data-science-team {
   float: left;
   width: calc(100% - 32px);
+  z-index 2
+
 
   .team-member {
     width: calc(100% - 32px);

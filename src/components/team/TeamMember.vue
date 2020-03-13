@@ -52,7 +52,8 @@ export default {
     margin-top: 24px;
     transform: translateX(-50%);
     width: 60%;
-    z-index: 0;
+    position relative
+    z-index: 4;
   }
 
   .name {
@@ -78,6 +79,8 @@ export default {
     justify-content: center;
     margin-top: 16px;
     padding: 16px 24px;
+    z-index 3
+    position relative
 
     .mark {
       margin-left: 8px;
