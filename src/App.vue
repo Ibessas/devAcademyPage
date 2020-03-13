@@ -1,32 +1,33 @@
 <template>
   <div id="app">
     <Animation />
-    <Capa/>
+    <Capa />
     <span id="time"></span>
-    <Team/>
-
-
+    <Team />
+    <Rodape />
+    <span id="rodape"></span>
   </div>
 </template>
 
 <script>
 import Capa from './components/Capa.vue';
 import Animation from './components/Animation.vue';
-import Team from './components/team/Team.vue'
-
+import Team from './components/team/Team.vue';
+import Rodape from './components/Rodape.vue';
 
 export default {
   name: 'App',
   components: {
     Capa,
     Animation,
-    Team
-
+    Team,
+    Rodape
   }
 };
 </script>
 
 <style lang="stylus">
+
 html
   overflow-x hidden
 
@@ -42,8 +43,17 @@ body
   font-family: dekar-regular;
   src: url('./assets/Dekar/Dekar-Regular.otf');
 
+.animation, .nav
+  position fixed
+
 #time
   display block
-  height: 10px;  
+  height: 10px;
+  visibility: hidden;
+
+#rodape
+  position absolute
+  display block
+  bottom 0
   visibility: hidden;
 </style>
