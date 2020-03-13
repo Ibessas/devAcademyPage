@@ -113,13 +113,14 @@ export default {
 
 <style lang="stylus">
 .team {
-  background-color: rgb(20,20,20);
+  background-color: rgba(0,0,0,0);
   float: left;
   padding: 0 5% 64px 5%;
-  z-index 0
+  position relative
 
   .team-content {
     padding-left: 32px;
+    position relative
 
     .title {
       color: #ffffff;
@@ -130,7 +131,6 @@ export default {
     }
 
     .team-member {
-      z-index 1
       float: left;
       margin-right: 32px;
       margin-top: 32px;
@@ -141,9 +141,9 @@ export default {
 .web-team {
   float: left;
   width: calc(60% - 32px);
+  z-index 2
 
   .team-member {
-    z-index 1
     width: calc(33.3% - 32px);
   }
 }
@@ -151,6 +151,8 @@ export default {
 .data-science-team {
   float: left;
   width: calc(40% - 32px);
+  z-index 2
+
 
   .team-member {
     width: calc(50% - 32px);
