@@ -1,16 +1,12 @@
 <template>
-  <div>
-    <div class="menu">
       <div class="nav" v-bind:style="navBackground">
         <ul>
           <li><a href="#capa"> <span class="dev">dev.</span>academy</a></li>
           <li><a href="#">Quem somos</a></li>
-          <li><a href="#">Time</a></li>
+          <li><a href="#time">Time</a></li>
           <li><a href="#">Sobre</a></li>
         </ul>
       </div>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -24,9 +20,6 @@ export default {
     };
   },
   created() {
-    const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    console.log(`${vw  } ${  vh}` )
     window.addEventListener('scroll', this.handleScroll);
   },
   destroyed() {
@@ -47,7 +40,7 @@ export default {
     top 0px
     padding 10px 0px
     position fixed
-    z-index 2
+    z-index 3
 
 ul
   list-style-type none

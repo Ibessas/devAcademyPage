@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="animation">
 
       <h1 class="group1">-</h1>
@@ -23,7 +22,7 @@
       <h1 class="group1">elif</h1>
       <h1 class="group5">-</h1>
       <h1 class="group4">#</h1>
-
+      
       <h1 class="group1">-</h1>
       <h1 class="group2">{</h1>
       <h1 class="group3">#</h1>
@@ -35,10 +34,8 @@
       <h1 class="group5">-</h1>
       <h1 class="group4">#</h1>
 
-
     
     </div>
-  </div>
 </template>
 
 <script>
@@ -50,17 +47,17 @@ export default {
 <style lang="stylus">
 .animation
   height 100%
-  width 100%
+  width 100% 
   color white  
   bottom:15%;
   position absolute
   top 0
   z-index 0
-
 h1
   position relative
   font-size 50px
   opacity 0.2
+
   -webkit-animation:linear infinite alternate;
   -webkit-animation-name: run;
 
