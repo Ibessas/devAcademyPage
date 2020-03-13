@@ -3,6 +3,7 @@
     <Animation />
     <Capa />
     <span id="time"></span>
+    <QuemSomos />
     <Team />
     <Rodape />
     <span id="rodape"></span>
@@ -14,6 +15,7 @@ import Capa from './components/Capa.vue';
 import Animation from './components/Animation.vue';
 import Team from './components/team/Team.vue';
 import Rodape from './components/Rodape.vue';
+import QuemSomos from './components/quem-somos/QuemSomos.vue';
 
 export default {
   name: 'App',
@@ -21,7 +23,8 @@ export default {
     Capa,
     Animation,
     Team,
-    Rodape
+    Rodape,
+    QuemSomos
   }
 };
 </script>
