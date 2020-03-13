@@ -1,15 +1,15 @@
 <template>
   <div class="animation">
-    <h1 class="group0">#</h1>
-    <h1 class="group1">-</h1>
-    <h1 class="group2">{</h1>
+    <h1 class="group2 yellow">{</h1>
     <h1 class="group3">#</h1>
-    <h1 class="group4">-</h1>
+    <h1 class="group1">-</h1>
+    <h1 class="group0">;</h1>
+    <h1 class="group4 yellow">&</h1>
+    <h1 class="group9 yellow">elif</h1> 
     <h1 class="group5">\</h1>
-    <h1 class="group6">//</h1>
     <h1 class="group7">if</h1>
+    <h1 class="group6 yellow">//</h1>
     <h1 class="group8">}</h1>
-    <h1 class="group9">elif</h1> 
 
   </div>
 </template>
@@ -28,11 +28,13 @@ export default {
   bottom:15%;
   top 0
   z-index 0
+.yellow
+  color rgb(220,178,22)
 
 h1
   position relative
   font-size 50px
-  opacity 0.2
+  opacity 0.4
 
   -webkit-animation:linear infinite alternate;
   -webkit-animation-name: run;
