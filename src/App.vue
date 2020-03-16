@@ -2,6 +2,8 @@
   <div id="app">
     <Animation />
     <Capa />
+    <span id="container"></span>
+    <QuemSomos />
     <span id="time"></span>
     <Team />
     <Rodape />
@@ -14,6 +16,7 @@ import Capa from './components/Capa.vue';
 import Animation from './components/Animation.vue';
 import Team from './components/team/Team.vue';
 import Rodape from './components/Rodape.vue';
+import QuemSomos from './components/quem-somos/QuemSomos.vue';
 
 export default {
   name: 'App',
@@ -21,7 +24,8 @@ export default {
     Capa,
     Animation,
     Team,
-    Rodape
+    Rodape,
+    QuemSomos
   }
 };
 </script>
@@ -30,7 +34,8 @@ export default {
 
 html
   overflow-x hidden
-
+  scroll-behavior: smooth;
+  
 body
   margin: 0
   font-family dekar-regular
@@ -47,6 +52,11 @@ body
   position fixed
 
 #time
+  display block
+  height: 10px;
+  visibility: hidden;
+
+#container
   display block
   height: 10px;
   visibility: hidden;

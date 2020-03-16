@@ -2,7 +2,7 @@
       <div class="nav" v-bind:style="navBackground" v-bind:class="{'responsive':responsive}">
         <ul>
           <li><a @click="toggleNav()" href="#capa"> <span class="dev">dev.</span>academy</a></li>
-          <li><a @click="toggleNav()" href="#">Quem somos</a></li>
+          <li><a @click="toggleNav()" href="#container">Quem somos</a></li>
           <li><a @click="toggleNav()" href="#time">Time</a></li>
           <li><a @click="toggleNav()" href="#rodape">Contato</a></li>
           
@@ -47,7 +47,6 @@ export default {
 </script>
 
 <style lang="stylus">
-
 .nav
     width 100% 
     top 0px
