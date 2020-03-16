@@ -2,8 +2,9 @@
   <div id="app">
     <Animation />
     <Capa />
-    <span id="time"></span>
+    <span id="container"></span>
     <QuemSomos />
+    <span id="time"></span>
     <Team />
     <Rodape />
     <span id="rodape"></span>
@@ -33,7 +34,8 @@ export default {
 
 html
   overflow-x hidden
-
+  scroll-behavior: smooth;
+  
 body
   margin: 0
   font-family dekar-regular
@@ -50,6 +52,11 @@ body
   position fixed
 
 #time
+  display block
+  height: 10px;
+  visibility: hidden;
+
+#container
   display block
   height: 10px;
   visibility: hidden;

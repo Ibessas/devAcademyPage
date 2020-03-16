@@ -74,9 +74,9 @@ export default {
 
 .title
   color #FFF
-
   h1
     font-size 40px
+    opacity 1
 
 .description
   display flex
@@ -109,13 +109,24 @@ export default {
   font-size 24px
   padding 0 10px
   color #FFF
-
   p
     margin 20px 0
+
+
+@media screen and (max-width: 600px)
+  .who-we-are-wrapper
+    position inherit
   
 @media screen and (min-width: 600px)
   .who-we-are-wrapper
     padding 0 10px
+    position absolute
+  
+  .text-content
+    font-size 1.5vw
+  
+  .slide
+    width 10px
 
 @media screen and (min-width: 1200px)
   .container
@@ -133,7 +144,7 @@ export default {
 
   .description
     flex-direction row
-
+    
   .img
     img
       max-height 480px
