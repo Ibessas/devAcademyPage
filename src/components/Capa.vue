@@ -1,13 +1,18 @@
 <template>
-    <div class="capa" id="capa">
-      <Menu />
-      <img v-bind:style='imgBackground' src='../assets/background1.png' alt="" srcset="">
-    </div>
+  <div class="capa" id="capa">
+    <Menu />
+    <img
+      class="background"
+      v-bind:style="imgBackground"
+      src="../assets/background1.png"
+      alt=""
+      srcset=""
+    />
+  </div>
 </template>
 
 <script>
 import Menu from './Menu.vue';
-
 
 export default {
   name: 'Capa',
@@ -29,10 +34,9 @@ export default {
   },
   methods: {
     handleScroll() {
-      let valor = Math.abs((window.scrollY - 1000))/1000;
-      if(valor < 0.4)
-        valor /=2
-      this.imgBackground.opacity = valor
+      let valor = Math.abs(window.scrollY - 1000) / 1000;
+      if (valor < 0.4) valor /= 2;
+      this.imgBackground.opacity = valor;
     }
   }
 };
@@ -45,10 +49,15 @@ export default {
   position relative
   overflow hidden
   background-repeat no-repeat
-img 
+img
   width 100vw
   z-index -1
   position relative
 Menu
   z-index 0
+
+@media screen and (max-width: 600px)
+  .background
+    width 200vw
+    margin-left -50vw
 </style>
